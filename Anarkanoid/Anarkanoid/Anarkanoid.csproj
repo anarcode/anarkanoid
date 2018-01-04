@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{167113B7-EE88-4B55-BB78-894D68CAFDC9}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Anarkanoid</RootNamespace>
+    <AssemblyName>Anarkanoid</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>da7574b1-efd1-419f-bd3a-b7ee2ba9f471</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Desarrollo\C#\Anarkanoid\Publicacion\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8FCB1C4FDD1D067EF23683132BD479F7ADBD1F67</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Anarkanoid_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicGameConfiguration.cs" />
+    <Compile Include="BasicKeysConfiguration.cs" />
+    <Compile Include="CollisionDetectors\BallBlockCollisionDetector.cs" />
+    <Compile Include="CollisionDetectors\BallSpaceShipCollisionDetector.cs" />
+    <Compile Include="CollisionDetectors\RectangleCollisionDetector.cs" />
+    <Compile Include="CollisionDetectors\SpaceShipPrizeCollisionDetector.cs" />
+    <Compile Include="CollisionDetectors\ShootBlockCollisionDetector.cs" />
+    <Compile Include="Commands\DelayedActionCommand.cs" />
+    <Compile Include="Commands\VoidCommand.cs" />
+    <Compile Include="Commands\SetHookedBallPositionCommand.cs" />
+    <Compile Include="Commands\CommandsFactory.cs" />
+    <Compile Include="Commands\ActionCommand.cs" />
+    <Compile Include="Commands\UnhookBallCommand.cs" />
+    <Compile Include="Commands\MoveSpaceShipToRightCommand.cs" />
+    <Compile Include="Commands\MoveSpaceShipToLeftCommand.cs" />
+    <Compile Include="Core\BallType.cs" />
+    <Compile Include="Core\BasicResourceRepositoryConfiguration.cs" />
+    <Compile Include="Core\BlockCollision.cs" />
+    <Compile Include="Core\BlockCollisionPoints.cs" />
+    <Compile Include="Core\BlockCollisionPointsCalculator.cs" />
+    <Compile Include="Core\BlockCollisionType.cs" />
+    <Compile Include="Core\Command.cs" />
+    <Compile Include="Core\ComponentDrawer.cs" />
+    <Compile Include="Core\ComponentManager.cs" />
+    <Compile Include="Core\MatchComponents.cs" />
+    <Compile Include="Core\Pair.cs" />
+    <Compile Include="Core\Prize.cs" />
+    <Compile Include="Core\BallPrize.cs" />
+    <Compile Include="GameComponents\Balls\BallRepository.cs" />
+    <Compile Include="GameComponents\Balls\FireBall.cs" />
+    <Compile Include="GameComponents\Blocks\IrromptableBlock.cs" />
+    <Compile Include="Interfaces\IShoot.cs" />
+    <Compile Include="Interfaces\IShooter.cs" />
+    <Compile Include="MatchStates\ConfigureControlsState.KeysActions.cs" />
+    <Compile Include="MatchStates\ConfigureControlsState.Constants.cs" />
+    <Compile Include="MatchStates\ConfigureControlsState.cs" />
+    <Compile Include="MatchStates\WinGameState.cs" />
+    <Compile Include="MatchStates\LevelEditorState.cs" />
+    <Compile Include="MatchStates\NextStageState.cs" />
+    <Compile Include="Prizes\BasicShooterPrize.cs" />
+    <Compile Include="Prizes\PrizeFactory.cs" />
+    <Compile Include="Prizes\SpaceShipPrize.cs" />
+    <Compile Include="Core\RegionManager.Region.cs" />
+    <Compile Include="Core\RegionManager.cs" />
+    <Compile Include="Core\RegionManagerConfiguration.cs" />
+    <Compile Include="Core\ResourceRepository.cs" />
+    <Compile Include="GameComponents\Blocks\RandomPrizeBlock.cs" />
+    <Compile Include="GameComponents\CustomElement.cs" />
+    <Compile Include="GameComponents\Blocks\PrizeBlock.cs" />
+    <Compile Include="Interfaces\IBlockCollisionDetector.cs" />
+    <Compile Include="Interfaces\IPrize.cs" />
+    <Compile Include="Interfaces\IResourceRepositoryConfiguration.cs" />
+    <Compile Include="GameComponents\Block.cs" />
+    <Compile Include="GameComponents\Blocks\ThreeLivesBlock.cs" />
+    <Compile Include="GameComponents\Blocks\BasicBlock.cs" />
+    <Compile Include="GameComponents\Blocks\BlockBuilder.cs" />
+    <Compile Include="Core\BlockDefinition.cs" />
+    <Compile Include="Core\BlockType.cs" />
+    <Compile Include="GameComponents\Board.cs" />
+    <Compile Include="Core\BoardDefinition.cs" />
+    <Compile Include="Interfaces\IAnarkanoidGame.cs" />
+    <Compile Include="Interfaces\IBlock.cs" />
+    <Compile Include="Interfaces\IBlockObserver.cs" />
+    <Compile Include="Interfaces\IBoard.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IComponentManager.cs" />
+    <Compile Include="MatchStates\IntroGameState.cs" />
+    <Compile Include="MatchStates\IntroMatchState.cs" />
+    <Compile Include="MatchStates\NewMatchState.cs" />
+    <Compile Include="MatchStates\GameOverState.cs" />
+    <Compile Include="MatchStates\DeadState.cs" />
+    <Compile Include="MatchStates\InitialMatchState.cs" />
+    <Compile Include="MatchStates\MatchState.cs" />
+    <Compile Include="GameComponents\ShowText.cs" />
+    <Compile Include="Interfaces\IGameComponent.cs" />
+    <Compile Include="Interfaces\IMobileGameComponent.cs" />
+    <Compile Include="Interfaces\ISpaceShip.cs" />
+    <Compile Include="Interfaces\IBall.cs" />
+    <Compile Include="Interfaces\IKeysConfiguration.cs" />
+    <Compile Include="Core\MobileGameComponent.cs" />
+    <Compile Include="Core\GameComponent.cs" />
+    <Compile Include="Core\Size.cs" />
+    <Compile Include="GameComponents\Balls\BasicBall.cs" />
+    <Compile Include="GameComponents\SpaceShip.cs" />
+    <Compile Include="Interfaces\IGameConfiguration.cs" />
+    <Compile Include="Interfaces\IMatchComponents.cs" />
+    <Compile Include="MatchStates\PlayingState.cs" />
+    <Compile Include="Prizes\SlowDownBallPrize.cs" />
+    <Compile Include="Prizes\FireBallPrize.cs" />
+    <Compile Include="Prizes\ThreeBallsPrize.cs" />
+    <Compile Include="Prizes\WiderSpaceShipPrize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="AnarkanoidGame.cs" />
+    <Compile Include="Shooters\BasicShooter.cs" />
+    <Compile Include="Shooters\ShooterFactory.cs" />
+    <Compile Include="GameComponents\Shoots\BasicShoot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnarkanoidContent\AnarkanoidContent.contentproj">
+      <Name>AnarkanoidContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{6E60D800-C6E2-42AF-B49B-988CE4660244}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anarkanoid_ClaveTemporal.pfx" />
+    <Compile Include="MatchStates\IntroGameState.Constants.cs" />
+    <Compile Include="MatchStates\IntroGameState.KeysActions.cs" />
+    <None Include="Boards\FirstStage.stage">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

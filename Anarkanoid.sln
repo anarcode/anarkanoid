@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anarkanoid", "Anarkanoid\Anarkanoid\Anarkanoid.csproj", "{167113B7-EE88-4B55-BB78-894D68CAFDC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnarkanoidContent", "Anarkanoid\AnarkanoidContent\AnarkanoidContent.contentproj", "{6E60D800-C6E2-42AF-B49B-988CE4660244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anarkanoid.Tests", "Anarkanoid.Tests\Anarkanoid.Tests.csproj", "{B3BE71CD-1578-457D-A1CD-27D93829FFCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{167113B7-EE88-4B55-BB78-894D68CAFDC9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{167113B7-EE88-4B55-BB78-894D68CAFDC9}.Debug|x86.ActiveCfg = Debug|x86
+		{167113B7-EE88-4B55-BB78-894D68CAFDC9}.Debug|x86.Build.0 = Debug|x86
+		{167113B7-EE88-4B55-BB78-894D68CAFDC9}.Release|Any CPU.ActiveCfg = Release|x86
+		{167113B7-EE88-4B55-BB78-894D68CAFDC9}.Release|x86.ActiveCfg = Release|x86
+		{167113B7-EE88-4B55-BB78-894D68CAFDC9}.Release|x86.Build.0 = Release|x86
+		{6E60D800-C6E2-42AF-B49B-988CE4660244}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6E60D800-C6E2-42AF-B49B-988CE4660244}.Debug|x86.ActiveCfg = Debug|x86
+		{6E60D800-C6E2-42AF-B49B-988CE4660244}.Release|Any CPU.ActiveCfg = Release|x86
+		{6E60D800-C6E2-42AF-B49B-988CE4660244}.Release|x86.ActiveCfg = Release|x86
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Debug|x86.Build.0 = Debug|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Release|x86.ActiveCfg = Release|Any CPU
+		{B3BE71CD-1578-457D-A1CD-27D93829FFCA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
